@@ -81,6 +81,13 @@
 /* media query */
 
 @media (max-width: 1090px) {
+  .navbar {
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+
   .navbar-menu-toggle {
     display: block;
   }
@@ -348,7 +355,7 @@ p {
 }
 
 #carticon {
-  position: absolute;
+  /* position: absolute; */
   height: 25px;
   width: 25px;
   right: 20%;
@@ -356,9 +363,21 @@ p {
 }
 
 #phoneicon {
-  position: absolute;
+  /* position: absolute; */
   height: 25px;
   width: 25px;
   right: 20%;
   display: inline-block;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 1000px) {
+  .icons {
+    display: flex;
+    justify-content: end;
+  }
 }
