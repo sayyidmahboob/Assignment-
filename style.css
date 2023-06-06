@@ -368,6 +368,7 @@ p {
   width: 25px;
   right: 20%;
   display: inline-block;
+  padding-left: 10px;
 }
 
 .icons {
