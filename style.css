@@ -208,7 +208,7 @@ p {
 }
 
 /* Media query */
-@media (max-width: 600px) {
+@media (max-width: 1019px) {
   .navbar {
     position: relative;
   }
