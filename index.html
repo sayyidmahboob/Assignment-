@@ -35,8 +35,11 @@
             <li><a href="#">Contact Us</a></li>
           </ul>
           <div class="icons">
-            <i id="carticon" class="fa-solid fa-cart-shopping"></i>
-            <i id="phoneicon" class="fa-solid fa-phone"></i>
+            <!-- <i id="carticon" class="fa-solid fa-cart-shopping"></i> -->
+            <span id="carticon">
+              <img src="/images/shopping.png" alt=""
+            /></span>
+            <span id="phoneicon"> <img src="/images/phone.png" alt="" /></span>
           </div>
         </div>
 
@@ -77,14 +80,21 @@
       </div>
     </div>
     <script>
-      function toggleNavbarMenu() {
-        var navbarMenuToggle = document.querySelector(".navbar-menu-toggle");
-        var navbarMenu = document.querySelector(".navbar-menu");
-        var cardOverlay = document.querySelector(".card-overlay");
+      const toggleButton = document.querySelector(".navbar-menu-toggle");
+      const navbarMenu = document.querySelector(".navbar-menu");
+      const cardOverlay = document.querySelector(".card-overlay");
+      const body = document.querySelector("body");
 
-        navbarMenuToggle.classList.toggle("active");
+      toggleButton.addEventListener("click", () => {
         navbarMenu.classList.toggle("show");
-      }
+        body.classList.toggle("overflow-hidden");
+
+        if (navbarMenu.classList.contains("show")) {
+          cardOverlay.style.display = "none";
+        } else {
+          cardOverlay.style.display = "block";
+        }
+      });
     </script>
   </body>
 </html>
