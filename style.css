@@ -187,6 +187,19 @@
   }
 }
 
+/* @media (max-width: 970px) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    flex-basis: calc(50%);
+    margin: 0 10px 25px;
+    width: calc(50% - 20px);
+  }
+} */
+
 .btn {
   background: rgba(255, 255, 255, 0.445);
   border-radius: 30px;
@@ -387,3 +400,12 @@ p {
     justify-content: end;
   }
 }
+
+/* .box {
+  display: flex;
+  width: 800px;
+  height: 400px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+} */
